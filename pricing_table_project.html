@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+        background-color: rgb(25, 24, 37);
+      }
+
+      .pricing-container {
+        display: flex;
+        gap: 50px;
+        justify-content: center;
+        align-content: center;
+        height: 50vh;
+        align-items: center;
+        color: white;
+        flex-wrap: wrap;
+      }
+
+      #title {
+        flex-basis: 100%;
+        text-align: center;
+        text-shadow: -3px 3px #c1acff;
+        text-transform: uppercase;
+        font-family: "Tilt Neon", sans-serif;
+        font-size: large;
+      }
+
+      .pricing-container > * {
+        flex-basis: 350px;
+      }
+
+      .pricing-plan {
+        background-color: #8a63ff;
+        box-shadow: -5px 5px 30px #8f6affb6;
+        border-left: 2px solid #9680d8fd;
+        border-bottom: 2px solid #9680d8;;
+        border-radius: 10%;
+        padding: 10px;
+        text-align: center;
+        justify-content: center;
+      }
+
+      .plan-features {
+        list-style: none;
+        padding: 0px;
+      }
+
+      .plan-features > li {
+        margin: 10px 0px;
+      }
+
+      .plan-title {
+        font-size: large;
+        margin: 10px 0px;
+        font-weight: bold;
+      }
+
+      .plan-price {
+        font-size: xx-large;
+        margin: 10px 0px;
+        font-weight: bold;
+        background: linear-gradient(90deg, #c1acff, #9c7bff, #8a63ff);
+        box-shadow: -8px 7px 8px #6f3fff6b;
+        border-left: 2px solid #7666a7;
+        border-bottom: 2px solid #7666a7;;
+        border-radius: 10px;
+        width: fit-content;
+        margin: auto;
+        padding: 10px;
+      }
+
+      .plan-button {
+        background-color: #c1acff;
+        color: black;
+        box-shadow: -5px 3px 5px #6f3fff;
+        border-width: 0px;
+        border-radius: 10px;
+        padding: 0.5rem;
+        margin: 10px 0px;
+        font-weight: bold;
+        border-left: 2px solid #d9ccffa1;
+        border-bottom: 2px solid #d9ccffa1;
+      }
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction: column;
+          height: auto;
+          justify-items: center;
+        }
+
+        .pricing-container > * {
+          flex-basis: auto;
+          width: 75%;
+          border-radius: 50px;
+        }
+
+        .plan-price, .plan-button {
+          border-radius: 20px;
+        }
+
+        .plan-title, .plan-features, .plan-button {
+          font-size: 3vw;
+        }
+
+        .plan-price {
+          font-size: 7vw;
+        }
+
+        #title {
+          font-size: 5vw;
+        }
+
+        .plan-button {
+          max-width:min-content;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div id="title"><h1>FutureTech Implants</h1></div>
+      <div class="pricing-plan">
+        <div class="plan-title">NanoSync</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ Neural Mesh Integration</li>
+          <li>✅ Personalized Cybernetics</li>
+          <li>🚫 24/7 Virtual Support</li>
+        </ul>
+        <button class="plan-button">Upgrade Now</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">QuantumLink</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ Advanced Neural Network</li>
+          <li>✅ Multiple User Connections</li>
+          <li>✅ VIP Cybernetic Assistance</li>
+        </ul>
+        <button class="plan-button">Upgrade Now</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">HyperCore</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ Elite Cybernetic Enhancements</li>
+          <li>✅ Enhanced User Network</li>
+          <li>✅ 24/7 Elite Cybernetic Support</li>
+        </ul>
+        <button class="plan-button">Upgrade Now</button>
+      </div>
+</div>
+
+      </div>
+    </div>
+  </body>
+</html>
