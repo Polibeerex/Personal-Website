@@ -43,7 +43,7 @@ body {
   margin: 0 auto;
 
   background: linear-gradient(-45deg, #000000, #444444, #706f6f, #929292);
-  background-size: 400% 600%;
+  background-size: 400% 800%;
   animation: gradient 15s ease infinite;
   height: 100vh;
 }
@@ -651,7 +651,6 @@ footer {
   }
 }
 
-/* Responsive Design */
 /* Responsive Design for Mobile Devices */
 @media (max-width: 768px) {
   body {
