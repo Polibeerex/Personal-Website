@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="card.css">
     <link rel="stylesheet" href="progressbar.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -169,53 +170,95 @@
     </section>
 
     <!-- Projects Section -->
+    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
         <!-- Showcase your past projects or work -->
         <div id="project-container">
-            <div class="project-card">
-                <img src="./images/project-temp.jpg" alt="Project 1">
-                <h3>Project 1</h3>
-                <p>Description of Project 1.</p>
-            </div>
-            <div class="project-card">
-                <img src="./images/project-temp.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
-            </div>
-            <div class="project-card">
-                <img src="./images/project-temp.jpg" alt="Project 2">
-                <h3>Project 2</h3>
-                <p>Description of Project 2.</p>
-            </div>
+            <a href="pricing_table_project.html" class="project-link">
+                <div class="project-card">
+                    <img src="./images/pricing.png" alt="Preview of the first project">
+                    <h3>Flexbox Pricing Table</h3>
+                    <p>Beautiful neon price table made with Flexbox (practice during training).</p>
+                </div>
+            </a>
+            <a href="https://polibeerex.github.io/CapyLove/" class="project-link">
+                <div class="project-card">
+                    <img src="./images/CapyLove.png" alt="Preview of the second project">
+                    <h3>CapyLove</h3>
+                    <p> A beautiful landing page for a dating app I created using Bootstrap to consolidate the learning
+                        of this framework.</p>
+                </div>
+            </a>
+            <a href="#" class="project-link">
+                <div class="project-card">
+                    <img src="./images/development.jpg" alt="Preview of the third project">
+                    <h3>Project 3</h3>
+                    <p>The project is under development.</p>
+                </div>
+            </a>
         </div>
     </section>
+
 
     <!-- About Me Section -->
     <section id="about">
         <h2>About Me</h2>
         <!-- Additional information about your interests -->
-        <div id="about-photos">
-            <img src="./images/profile-temp.jpg" alt="Profile Photo">
-            <img src="./images/profile-temp.jpg" alt="Profile Photo">
-            <img src="./images/profile-temp.jpg" alt="Profile Photo">
-        </div>
         <div id="about-text">
-            <p>I am a dedicated individual with a passion for web development. My skills span various programming
-                languages
-                and frameworks, enabling me to craft dynamic and user-friendly websites. Whether it's front-end or
-                back-end
-                development, I thrive on creating engaging online experiences.</p>
+            <p>I'm an eager, aspiring full-stack web developer with a strong foundation in IT. <strong>Currently, I'm
+                    deeply engaged in learning various web technologies. I've already mastered HTML5 and CSS3, and I'm
+                    now diving into JavaScript to enhance my frontend skills.</strong> My journey involves refining
+                frontend abilities and exploring backend development, database management, and more.</p><br>
+            <p><strong>This website reflects my hands-on approach and commitment. Built entirely from scratch, I used
+                    pure HTML and CSS to create its framework.</strong> While utilizing ready-made solutions from
+                platforms like CodePen for elements such as progress bars and image cards, I intentionally avoided using
+                pre-designed frameworks like Bootstrap for the layout and design. This ensures a unique and customized
+                digital experience.</p><br>
+            <p><strong>This website showcases some of my web development skills. Please note that its content and design
+                    might be outdated as I continue to grow and evolve in the ever-changing landscape of web
+                    development.</strong></p>
 
-            <p>My journey in web development has provided me with a solid foundation in HTML, CSS, JavaScript, and
-                expertise
-                in
-                frameworks such as React and Django. I am adept at turning design concepts into fully functional and
-                responsive websites that meet both aesthetic and functional requirements.</p>
-
-            <p>Continuously learning and staying updated on the latest industry trends, I am committed to delivering
-                high-quality solutions that align with the evolving needs of the digital landscape.</p>
         </div>
+        <h3>My passions</h2>
+            <div class="page-content">
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Gaming</h2>
+                        <p class="copy">My main hobby is gaming. I prefer strategy games and RPGs (Heart of Irons 4,
+                            Crusader Kings 3, Baldur's Gate 3, The Witcher 3, etc.).</p>
+                        <!-- <button class="btn">View Trips</button> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">AI & Neural Networks</h2>
+                        <p class="copy">I am passionate about the development of AI and neural networks. For example, I
+                            have
+                            mastered Stable Diffusion, but I also follow other technologies.</p>
+                        <!-- <button class="btn">View Trips</button> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Movies, Series & Anime</h2>
+                        <p class="copy">What I appreciate in a movie is a deep plot. I like sci-fi, dystopia, cyberpunk
+                            and
+                            crime. </p>
+                        <!-- <button class="btn">View Trips</button> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="content">
+                        <h2 class="title">Science</h2>
+                        <p class="copy">I enjoy discussing philosophical and near-scientific topics. I often watch
+                            youtube
+                            videos on such topics.</p>
+                        <!-- <button class="btn">View Trips</button> -->
+                    </div>
+                </div>
+            </div>
+
     </section>
 
 
@@ -224,7 +267,7 @@
 
         <h2>Contact Me</h2>
         <div id="contact-container">
-            <div class="contact-form-container">
+            <div id="contact-form-container">
                 <!-- Include contact information or a form -->
                 <form id="contact-form">
 
@@ -235,7 +278,7 @@
                     <input type="email" id="email" name="email" required>
 
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" required></textarea>
+                    <textarea id="message" name="message" required rows="12"></textarea>
 
                     <button type="submit">Submit</button>
                     <button type="reset">Reset</button>
@@ -246,35 +289,32 @@
                 <!-- Include social media links or a contact form -->
                 <div id="github-card">
                     <iframe
-                        src="https://github-readme-stats.vercel.app/api?username=polibeerex&show_icons=true&theme=buefy&counts=true&repo_count=true&follower_count=true&following_count=true"
+                        src="https://github-readme-stats.vercel.app/api?username=polibeerex&show_icons=true&hide_border=true&theme=swift&bg_color=ffffff&counts=true&repo_count=true&follower_count=true&following_count=true"
                         frameborder="0" scrolling="0">
                     </iframe>
                     <button>GitHub Profile</button>
                 </div>
                 <div id="linkedin-card">
-                    <div>
-                        <img src="your-linkedin-profile-picture.jpg" alt="Your LinkedIn Profile Picture">
-                        <h3>Your Name</h3>
-                        <p>Web Developer</p>
-                        <button>GitHub Profile</button>
+                    <div id="linkedin-content">
+                        <img src="./images/linkedin.jpg" alt="Your LinkedIn Profile Picture">
+                        <h3>Andrii Ovchynnikov</h3>
+                        <p>IT specialist</p>
+                        <button>LinkedIn Profile</button>
                     </div>
                 </div>
-
-
             </div>
         </div>
         </div>
     </section>
 
     <footer>
-        <div class=" footer-content">
+        <div class="footer-content">
             <div class="footer-logo">
-                <img src="footer-logo.png" alt="Footer Logo">
+                <img src="images/logo.svg" alt="Footer Logo">
             </div>
             <div class="footer-links">
                 <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">LinkedIn</a></li>
+                    <li><a href="#hero">Home</a></li>
                 </ul>
             </div>
         </div>
