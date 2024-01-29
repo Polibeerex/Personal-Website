@@ -21,6 +21,11 @@ h2 {
   margin-left: 15px;
 }
 
+h3 {
+  font-size: 24px;
+  margin-left: 15px;
+}
+
 a {
   color: var(--link-color);
   transition: color 0.3s ease;
@@ -167,7 +172,6 @@ nav a:hover {
   background-color: #f0f0f0;
   padding: 15px;
   border-radius: 10px;
-  margin-bottom: 20px;
 }
 
 .resume-subtitle {
@@ -332,8 +336,14 @@ nav a:hover {
   margin: 20px 0px;
 }
 
-.project-card {
+.project-link {
   width: 32%;
+  text-decoration: none; /* Ensure no underline on links */
+}
+
+.project-card {
+  height: 100%;
+  width: 100%; /* Occupy the full width of the parent anchor */
   margin-bottom: 20px;
   padding: 10px;
   border-radius: 8px;
@@ -356,6 +366,7 @@ nav a:hover {
 .project-card > p {
   font-size: 16px;
   margin-bottom: 10px;
+  margin-left: 15px;
 }
 
 .project-card:hover {
@@ -366,7 +377,7 @@ nav a:hover {
 #about-text {
   font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   text-align: justify;
   color: var(--text-color);
   padding: 0px 15px;
@@ -375,23 +386,21 @@ nav a:hover {
 #contact-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: space-between;
+  margin: 15px;
 }
 
-.contact-form-container {
-  width: 600px;
-  min-width: 300px;
+#contact-form-container {
+  width: 55%;
   border: 1px solid #ddd;
   border-radius: 15px;
   background-color: #f9f9f9;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form-container h2 {
+#contact-form-container h2 {
   text-align: center;
   color: #333;
 }
@@ -440,60 +449,101 @@ button {
   margin-top: 8px;
 }
 
-.linkedin-card {
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin: 10px;
-  border-radius: 8px;
-  max-width: 300px;
+#social-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 40%;
 }
 
-.linkedin-card img {
+#social-container > * {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+#github-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+#github-card > button {
+  align-self: center;
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: rgb(88, 88, 88);
+  color: rgb(255, 255, 255);
+  transition: background-color 0.3s ease;
+  font-weight: bolder;
+}
+
+#linkedin-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+#linkedin-content > button {
+  width: 50%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #0080f8;
+  color: white;
+  transition: background-color 0.3s ease;
+  font-weight: bolder;
+}
+
+#github-card > button:hover,
+#linkedin-content > button:hover {
+  background-color: var(--link-hover-color);
+}
+
+#linkedin-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+}
+
+#linkedin-content > img {
   border-radius: 50%;
   max-width: 100px;
   height: auto;
   margin-bottom: 10px;
 }
 
-.linkedin-card h3 {
+#linkedin-content > h3 {
   margin: 0;
   font-size: 1.2em;
 }
 
-.linkedin-card p {
+#linkedin-content > p {
   margin: 5px 0;
   color: #555;
-}
-
-.linkedin-card a {
-  display: inline-block;
-  padding: 8px 15px;
-  background-color: #0077b5;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 10px;
-}
-
-.linkedin-card a:hover {
-  background-color: #004471;
-}
-
-#social-container {
-  display: flex;
-  justify-content: start;
-  flex-direction: column;
-}
-
-#github-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
-}
-#linkedin-card {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 30px;
 }
 
 /* Styles for the footer */
@@ -688,5 +738,38 @@ footer {
   nav li {
     margin-right: 0;
     margin-bottom: 10px;
+  }
+
+  #project-container {
+    flex-direction: column; /* Stack cards vertically */
+  }
+
+  .project-link {
+    width: 100%; /* Full width for mobile */
+    margin-bottom: 20px; /* Add some space between cards */
+  }
+
+  #contact-container {
+    flex-direction: column;
+  }
+
+  #contact-form-container {
+    width: 100%;
+  }
+
+  #social-container {
+    width: 100%;
+  }
+
+  #contact-form-container,
+  #github-card {
+    margin-bottom: 20px;
+  }
+
+  footer {
+    display: block;
+    padding: 10px;
+    margin: 0px 0px;
+    border-radius: 0%;
   }
 }
