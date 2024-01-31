@@ -268,6 +268,7 @@ nav a:hover {
 #cv-text > p {
   line-height: 1.5;
   margin: 10px;
+  margin-top: 5px;
 }
 
 #cv-full {
@@ -290,8 +291,8 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
-.preview-container img {
-  max-width: 100%;
+.cv-preview-container > img {
+  width: 100%;
   height: auto;
 }
 
@@ -477,9 +478,15 @@ button {
   position: relative;
 }
 
-#github-card > button {
-  align-self: center;
+#github-card > a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#github-card > a > button {
   width: 50%;
+  align-self: center;
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: rgb(88, 88, 88);
@@ -500,8 +507,15 @@ button {
   border-radius: 8px;
 }
 
-#linkedin-content > button {
+#linkedin-content > a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+#linkedin-content > a > button {
   width: 50%;
+  align-self: center;
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: #0080f8;
@@ -510,15 +524,14 @@ button {
   font-weight: bolder;
 }
 
-#github-card > button:hover,
-#linkedin-content > button:hover {
+#github-card > a > button:hover,
+#linkedin-content > a > button:hover {
   background-color: var(--link-hover-color);
 }
 
 #linkedin-content {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   width: 100%;
   padding: 20px;
@@ -530,6 +543,7 @@ button {
 }
 
 #linkedin-content > img {
+  align-self: center;
   border-radius: 50%;
   max-width: 100px;
   height: auto;
@@ -537,11 +551,13 @@ button {
 }
 
 #linkedin-content > h3 {
+  align-self: center;
   margin: 0;
   font-size: 1.2em;
 }
 
 #linkedin-content > p {
+  align-self: center;
   margin: 5px 0;
   color: #555;
 }
@@ -760,7 +776,7 @@ footer {
     width: 100%;
   }
 
-  #contact-form-container,
+  #linkedin-card,
   #github-card {
     margin-bottom: 20px;
   }
@@ -770,5 +786,11 @@ footer {
     padding: 10px;
     margin: 0px 0px;
     border-radius: 0%;
+  }
+
+  #cv-text > p {
+    font-size: 12pt;
+    line-height: 1.2;
+    margin-top: 5px;
   }
 }
