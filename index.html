@@ -4,14 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="card.css">
-    <link rel="stylesheet" href="progressbar.css">
-    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="progressbar.css">
+    <link rel="stylesheet" href="styles.css">
 
-    <title>Personal Website</title>
+    <link rel="icon" href="./images/favicon.svg" type="image/svg">
+    <title>Andrii's Personal Website</title>
 
 </head>
 
@@ -19,8 +20,7 @@
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <img src="./images/logo.svg" alt="Your Logo">
-            <p>Web-Development</p>
+            <img src="./images/logo.svg" alt="Logo">
         </div>
         <nav>
             <ul>
@@ -46,7 +46,6 @@
     <!-- Resume Page -->
     <section id="resume">
         <h2>Resume</h2>
-        <!-- Include education, work experience, skills, etc. -->
         <div id="resume-container">
             <div id="education" class="resume-section">
                 <p class="resume-subtitle">Education</p>
@@ -170,11 +169,10 @@
     </section>
 
     <!-- Projects Section -->
-    <!-- Projects Section -->
     <section id="projects">
         <h2>Projects</h2>
         <!-- Showcase your past projects or work -->
-        <div id="project-container">
+        <div id="projects-container">
             <a href="pricing_table_project.html" class="project-link">
                 <div class="project-card">
                     <img src="./images/pricing.png" alt="Preview of the first project">
@@ -190,13 +188,28 @@
                         of this framework.</p>
                 </div>
             </a>
+            <a href="https://polibeerex.github.io/Interactive-Quiz/" class="project-link">
+                <div class="project-card">
+                    <img src="./images/quiz.png" alt="Preview of the fourth project">
+                    <h3>Interactive Quiz</h3>
+                    <p>An interactive quiz application to test your web development knowledge.</p>
+                </div>
+            </a>
+            <a href="https://poliweather.vercel.app/" class="project-link">
+                <div class="project-card">
+                    <img src="./images/weather.png" alt="Preview of the fifth project">
+                    <h3>Weather App</h3>
+                    <p>A weather application that provides real-time weather information for different locations.</p>
+                </div>
+            </a>
             <a href="#" class="project-link">
                 <div class="project-card">
-                    <img src="./images/development.jpg" alt="Preview of the third project">
-                    <h3>Project 3</h3>
+                    <img src="./images/development.jpg" alt="Preview of the under development project">
+                    <h3>Project</h3>
                     <p>The project is under development.</p>
                 </div>
             </a>
+
         </div>
     </section>
 
@@ -283,25 +296,13 @@
                     </iframe>
                     <a href="https://github.com/Polibeerex"><button>GitHub Profile</button></a>
                 </div>
-                
+
             </div>
             <div id="contact-form-container">
                 <!-- Include contact information or a form -->
-                <form id="contact-form">
-
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" required rows="12"></textarea>
-
-                    <button type="submit">Submit</button>
-                    <button type="reset">Reset</button>
-
-                </form>
+                <iframe id="google-form"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSfZAOnrXv5zcHd48U3iBVJLnzhwv1RLZSdPbP_uwO7c6cPFWQ/viewform?embedded=true"
+                    width="640" height="843" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
 
         </div>
@@ -313,12 +314,13 @@
                 <img src="images/logo.svg" alt="Footer Logo">
             </div>
             <div class="footer-links">
-                <ul>
-                    <li><a href="#hero">Home</a></li>
-                </ul>
+                <a id="back-to-top" href="#hero">
+                    <img src="images/top.svg" alt="back to top icon"/>
+                </a>
             </div>
         </div>
-        <p>&copy; 2024 Andrii Ovchynnikov. All rights reserved.</p>
+        <p>&copy; 2024 Andrii Ovchynnikov. This website is hosted on GitHub and is subject to the <a
+                href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
     </footer>
 </body>
 
