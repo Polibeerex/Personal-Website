@@ -2,326 +2,377 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="card.css">
-    <link rel="stylesheet" href="progressbar.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="card.css">
+  <link rel="stylesheet" href="progressbar.css">
+  <link rel="stylesheet" href="styles.css">
 
-    <link rel="icon" href="./images/favicon.svg" type="image/svg">
-    <title>Andrii's Personal Website</title>
+  <link rel="icon" href="./images/favicon.svg" type="image/svg">
+  <title>Andrii's Personal Website</title>
 
 </head>
 
 <body>
-    <!-- Header Section -->
-    <header>
-        <div class="logo">
-            <img src="./images/logo.svg" alt="Logo">
+  <!-- Header Section -->
+  <header>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div>
+      <img id="portrait" src="./images/portrait.png" width="275px" />
+      <div id="about-me">
+        <h1>Andrii Ovchynnikov</h1>
+        <p>Full-Stack Web Developer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Page -->
+  <section id="resume">
+    <h2>Resume</h2>
+    <div id="resume-container">
+      <div id="education" class="resume-section">
+        <p class="resume-subtitle">Education</p>
+        <div id="education-content">
+          <p id="degree">Bachelor's degree in Information Systems and Technology</p>
+          <p id="university-name">State University of Telecommunication</p>
+          <p id="university-location">Kyiv, Ukraine <br>2018 - 2022</p>
+          <p id="degree-description">Through this degree, I have gained expertise
+            in areas such as database management,
+            systems analysis, software development,
+            and network administration. My education
+            has fostered problem-solving and critical
+            thinking abilities, enabling me to effectively
+            analyze, design, and implement innovative
+            IT solutions. With a solid foundation in both
+            technical and managerial aspects, I am well-prepared to navigate the ever-evolving
+            landscape of information systems and
+            contribute to the success of dynamic
+            organizations.</p>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <!-- Hero Section -->
-    <section id="hero">
-        <div>
-            <img id="portrait" src="./images/portrait.png" width="275px" />
-            <div id="about-me">
-                <h1>Andrii Ovchynnikov</h1>
-                <p>IT specialist & Web-Developer</p>
+      </div>
+
+      <div id="skills" class="resume-section">
+
+
+        <div id="progress">
+          <p class="resume-subtitle">Skills</p>
+          <div class="skill-card">
+            <div class="set-size charts-container">
+              <div class="pie-wrapper progress-65">
+                <span class="label">65<span class="smaller">%</span></span>
+                <div class="pie">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+              </div>
             </div>
+            <p class="skill-title">JavaScript</p>
+          </div>
+          <div class="skill-card">
+            <div class="set-size charts-container">
+              <div class="pie-wrapper progress-100">
+                <span class="label">100<span class="smaller">%</span></span>
+                <div class="pie">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+              </div>
+            </div>
+            <p class="skill-title">HTML5</p>
+          </div>
+          <div class="skill-card">
+            <div class="set-size charts-container">
+              <div class="pie-wrapper progress-90">
+                <span class="label">90<span class="smaller">%</span></span>
+                <div class="pie">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+              </div>
+            </div>
+            <p class="skill-title">CSS3</p>
+          </div>
+          <div class="skill-card">
+            <div class="set-size charts-container">
+              <div class="pie-wrapper progress-45">
+                <span class="label">45<span class="smaller">%</span></span>
+                <div class="pie">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+              </div>
+            </div>
+            <p class="skill-title">Node.js</p>
+          </div>
+          <div class="skill-card">
+            <div class="set-size charts-container">
+              <div class="pie-wrapper progress-80">
+                <span class="label">80<span class="smaller">%</span></span>
+                <div class="pie">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+              </div>
+            </div>
+            <p class="skill-title">Express</p>
+          </div>
+          <div class="skill-card">
+            <div class="set-size charts-container">
+              <div class="pie-wrapper progress-80">
+                <span class="label">80<span class="smaller">%</span></span>
+                <div class="pie">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+              </div>
+            </div>
+            <p class="skill-title">Git</p>
+          </div>
+          <div class="skill-card">
+            <div class="set-size charts-container">
+              <div class="pie-wrapper progress-100">
+                <span class="label">100<span class="smaller">%</span></span>
+                <div class="pie">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+              </div>
+            </div>
+            <p class="skill-title">EJS</p>
+          </div>
+          <div class="skill-card">
+            <div class="set-size charts-container">
+              <div class="pie-wrapper progress-25">
+                <span class="label">25<span class="smaller">%</span></span>
+                <div class="pie">
+                  <div class="left-side half-circle"></div>
+                  <div class="right-side half-circle"></div>
+                </div>
+              </div>
+            </div>
+            <p class="skill-title">API</p>
+          </div>
         </div>
-    </section>
+      </div>
 
-    <!-- Resume Page -->
-    <section id="resume">
-        <h2>Resume</h2>
-        <div id="resume-container">
-            <div id="education" class="resume-section">
-                <p class="resume-subtitle">Education</p>
-                <div id="education-content">
-                    <p id="degree">Bachelor's degree in Information Systems and Technology</p>
-                    <p id="university-name">State University of Telecommunication</p>
-                    <p id="university-location">Kyiv, Ukraine <br>2018 - 2022</p>
-                    <p id="degree-description">Through this degree, I have gained expertise
-                        in areas such as database management,
-                        systems analysis, software development,
-                        and network administration. My education
-                        has fostered problem-solving and critical
-                        thinking abilities, enabling me to effectively
-                        analyze, design, and implement innovative
-                        IT solutions. With a solid foundation in both
-                        technical and managerial aspects, I am well-prepared to navigate the ever-evolving
-                        landscape of information systems and
-                        contribute to the success of dynamic
-                        organizations.</p>
-                </div>
+      <div id="resume-more" class="resume-section">
+        <p class="resume-subtitle">More</p>
+        <div id="cv-full">
+          <div id="cv-card">
+            <div class="cv-content-container">
+              <div class="cv-preview-container">
+                <img src="./images/PDF.png" alt="Preview PDF">
+              </div>
+              <p class="file-name">My_CV.pdf</p>
+              <a href="./My_CV.pdf" download class="download-link">Download</a>
             </div>
-            <div id="skills" class="resume-section">
-                <div id="progress">
-                    <p class="resume-subtitle">Skills</p>
-                    <div class="skill-card">
-                        <div class="set-size charts-container">
-                            <div class="pie-wrapper progress-95">
-                                <span class="label">95<span class="smaller">%</span></span>
-                                <div class="pie">
-                                    <div class="left-side half-circle"></div>
-                                    <div class="right-side half-circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="skill-title">HTML5</p>
-
-                    </div>
-                    <div class="skill-card">
-                        <div class="set-size charts-container">
-                            <div class="pie-wrapper progress-90">
-                                <span class="label">90<span class="smaller">%</span></span>
-                                <div class="pie">
-                                    <div class="left-side half-circle"></div>
-                                    <div class="right-side half-circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="skill-title">CSS3</p>
-
-                    </div>
-                    <div class="skill-card">
-                        <div class="set-size charts-container">
-                            <div class="pie-wrapper progress-45">
-                                <span class="label">45<span class="smaller">%</span></span>
-                                <div class="pie">
-                                    <div class="left-side half-circle"></div>
-                                    <div class="right-side half-circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="skill-title">JavaScript</p>
-
-                    </div>
-                    <div class="skill-card">
-                        <div class="set-size charts-container">
-                            <div class="pie-wrapper progress-30">
-                                <span class="label">30<span class="smaller">%</span></span>
-                                <div class="pie">
-                                    <div class="left-side half-circle"></div>
-                                    <div class="right-side half-circle"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="skill-title">Node.js</p>
-
-                    </div>
-
-                </div>
-
-            </div>
-            <div id="resume-more" class="resume-section">
-                <p class="resume-subtitle">More</p>
-                <div id="cv-full">
-                    <div id="cv-card">
-                        <div class="cv-content-container">
-                            <div class="cv-preview-container">
-                                <img src="./images/PDF.png" alt="Preview PDF">
-                            </div>
-                            <p class="file-name">My_CV.pdf</p>
-                            <a href="./My_CV.pdf" download class="download-link">Download</a>
-                        </div>
-                    </div>
-                    <div id="cv-text">
-                        <p>To obtain comprehensive details regarding my professional background, including work
-                            experience and skills, kindly download the attached PDF file of my curriculum vitae.</p>
-                    </div>
-                </div>
-            </div>
-            <div id="resume-languages" class="resume-section">
-                <p class="resume-subtitle">Languages</p>
-                <div class="languages">
-                    <div class="language">
-                        <div class="language-name">English</div>
-                        <div class="language-bar">
-                            <div class="language-per" per="Professional Working" style="max-width:80%"></div>
-                        </div>
-                    </div>
-                    <div class="language">
-                        <div class="language-name">Ukrainian</div>
-                        <div class="language-bar">
-                            <div class="language-per" per="Native" style="max-width:100%"></div>
-                        </div>
-                    </div>
-
-                    <div class="language">
-                        <div class="language-name">Russian</div>
-                        <div class="language-bar">
-                            <div class="language-per" per="Native" style="max-width:100%"></div>
-                        </div>
-                    </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <!-- Showcase your past projects or work -->
-        <div id="projects-container">
-            <a href="pricing_table_project.html" class="project-link">
-                <div class="project-card">
-                    <img src="./images/pricing.png" alt="Preview of the first project">
-                    <h3>Flexbox Pricing Table</h3>
-                    <p>Beautiful neon price table made with Flexbox (practice during training).</p>
-                </div>
-            </a>
-            <a href="https://polibeerex.github.io/CapyLove/" class="project-link">
-                <div class="project-card">
-                    <img src="./images/CapyLove.png" alt="Preview of the second project">
-                    <h3>CapyLove</h3>
-                    <p> A beautiful landing page for a dating app I created using Bootstrap to consolidate the learning
-                        of this framework.</p>
-                </div>
-            </a>
-            <a href="https://polibeerex.github.io/Interactive-Quiz/" class="project-link">
-                <div class="project-card">
-                    <img src="./images/quiz.png" alt="Preview of the fourth project">
-                    <h3>Interactive Quiz</h3>
-                    <p>An interactive quiz application to test your web development knowledge.</p>
-                </div>
-            </a>
-            <a href="https://poliweather.vercel.app/" class="project-link">
-                <div class="project-card">
-                    <img src="./images/weather.png" alt="Preview of the fifth project">
-                    <h3>Weather App</h3>
-                    <p>A weather application that provides real-time weather information for different locations.</p>
-                </div>
-            </a>
-            <a href="#" class="project-link">
-                <div class="project-card">
-                    <img src="./images/development.jpg" alt="Preview of the under development project">
-                    <h3>Project</h3>
-                    <p>The project is under development.</p>
-                </div>
-            </a>
-
+          </div>
+          <div id="cv-text">
+            <p>To obtain comprehensive details regarding my professional background, including work
+              experience and skills, kindly download the attached PDF file of my curriculum vitae.</p>
+          </div>
         </div>
-    </section>
+      </div>
+      <div id="resume-languages" class="resume-section">
+        <p class="resume-subtitle">Languages</p>
+        <div class="languages">
+          <div class="language">
+            <div class="language-name">English</div>
+            <div class="language-bar">
+              <div class="language-per" per="Professional Working" style="max-width:80%"></div>
+            </div>
+          </div>
+          <div class="language">
+            <div class="language-name">Ukrainian</div>
+            <div class="language-bar">
+              <div class="language-per" per="Native" style="max-width:100%"></div>
+            </div>
+          </div>
 
+          <div class="language">
+            <div class="language-name">Russian</div>
+            <div class="language-bar">
+              <div class="language-per" per="Native" style="max-width:100%"></div>
+            </div>
+          </div>
+  </section>
 
-    <!-- About Me Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <!-- Additional information about your interests -->
-        <div id="about-text">
-            <p>Hey there! 🚀 I'm a <strong>budding full-stack web developer</strong> on a journey through the vast realm
-                of <u>IT</u>. 🌐 Currently, I'm hooked on <strong>mastering web technologies</strong>. 💡 I've already
-                nailed <strong>HTML5</strong> and <strong>CSS3</strong>, and now I'm getting cozy with
-                <strong>JavaScript</strong> to amp up my frontend game.
-            </p>
-            <br>
-            <p>Guess what? This <strong>website you're exploring</strong> is my brainchild! 🧠 Crafted entirely from
-                scratch using <strong>pure HTML and CSS</strong>, I've spiced things up by throwing in some cool stuff
-                from CodePen – like progress bars and snazzy image cards. 😎 Purposefully steering clear of pre-designed
-                frameworks like Bootstrap, I've made sure you're in for a one-of-a-kind digital adventure.</p>
-            <br>
-            <p>Just a heads up – this website is like a snapshot of my web development skills. 📸 Keep in mind that the
-                content and design might be a bit retro as I'm in a constant state of growth in the ever-evolving world
-                of web development. 🌱💻</p>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <!-- Showcase your past projects or work -->
+    <div id="projects-container">
+      <a href="pricing_table_project.html" class="project-link">
+        <div class="project-card">
+          <img src="./images/pricing.png" alt="Preview of the first project">
+          <h3>Futuretech Implants</h3>
+          <p> A pricing table for a fictional company that provides futuristic implants for humans.</p>
+          <p class="project-technologies-list">CSS (Flexbox), HTML</p>
         </div>
-        <h3>My passions</h2>
-            <div class="page-content">
-                <div class="card">
-                    <div class="content">
-                        <h2 class="title">Gaming</h2>
-                        <p class="copy">My main hobby is gaming. I prefer strategy games and RPGs (Heart of Irons 4,
-                            Crusader Kings 3, Baldur's Gate 3, The Witcher 3, etc.).</p>
-                        <!-- <button class="btn">View Trips</button> -->
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <h2 class="title">AI & Neural Networks</h2>
-                        <p class="copy">I am passionate about the development of AI and neural networks. For example, I
-                            have
-                            mastered Stable Diffusion, but I also follow other technologies.</p>
-                        <!-- <button class="btn">View Trips</button> -->
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <h2 class="title">Movies, Series & Anime</h2>
-                        <p class="copy">What I appreciate in a movie is a deep plot. I like sci-fi, dystopia, cyberpunk
-                            and
-                            crime. </p>
-                        <!-- <button class="btn">View Trips</button> -->
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="content">
-                        <h2 class="title">Science</h2>
-                        <p class="copy">I enjoy discussing philosophical and near-scientific topics. I often watch
-                            youtube
-                            videos on such topics.</p>
-                        <!-- <button class="btn">View Trips</button> -->
-                    </div>
-                </div>
-            </div>
-    </section>
-
-    <!-- Contact Me Section -->
-    <section id="contact">
-
-        <h2>Contact Me</h2>
-        <div id="contact-container">
-            <div id="social-container">
-                <!-- Include social media links or a contact form -->
-                <div id="linkedin-card">
-                    <div id="linkedin-content">
-                        <img src="./images/linkedin.jpg" alt="Your LinkedIn Profile Picture">
-                        <h3>Andrii Ovchynnikov</h3>
-                        <p>IT specialist</p>
-                        <a href="https://www.linkedin.com/in/andrii-ovchynnikov/"><button>LinkedIn Profile</button></a>
-                    </div>
-                </div>
-                <div id="github-card">
-                    <iframe
-                        src="https://github-readme-stats.vercel.app/api?username=polibeerex&show_icons=true&hide_border=true&theme=swift&bg_color=ffffff&counts=true&repo_count=true&follower_count=true&following_count=true"
-                        frameborder="0" scrolling="0">
-                    </iframe>
-                    <a href="https://github.com/Polibeerex"><button>GitHub Profile</button></a>
-                </div>
-
-            </div>
-            <div id="contact-form-container">
-                <!-- Include contact information or a form -->
-                <iframe id="google-form"
-                    src="https://docs.google.com/forms/d/e/1FAIpQLSfZAOnrXv5zcHd48U3iBVJLnzhwv1RLZSdPbP_uwO7c6cPFWQ/viewform?embedded=true"
-                    width="640" height="843" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            </div>
-
+      </a>
+      <a href="https://polibeerex.github.io/CapyLove/" class="project-link">
+        <div class="project-card">
+          <img src="./images/CapyLove.png" alt="Preview of the second project">
+          <h3>CapyLove</h3>
+          <p> A simple landing page for a fictional company that provides dating services for capybaras.</p>
+          <p class="project-technologies-list">CSS (Bootstrap), HTML</p>
         </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer-logo">
-                <img src="images/logo.svg" alt="Footer Logo">
-            </div>
-            <div class="footer-links">
-                <a id="back-to-top" href="#hero">
-                    <img src="images/top.svg" alt="back to top icon"/>
-                </a>
-            </div>
+      </a>
+      <a href="https://polibeerex.github.io/Interactive-Quiz/" class="project-link">
+        <div class="project-card">
+          <img src="./images/quiz.png" alt="Preview of the fourth project">
+          <h3>Web Development Quiz</h3>
+          <p>An interactive quiz that tests your knowledge of web development.</p>
+          <p class="project-technologies-list">JavaScript, CSS, HTML </p>
         </div>
-        <p>&copy; 2024 Andrii Ovchynnikov. This website is hosted on GitHub and is subject to the <a
-                href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
-    </footer>
+      </a>
+      <a href="https://poliweather.vercel.app/" class="project-link">
+        <div class="project-card">
+          <img src="./images/weather.png" alt="Preview of the fifth project">
+          <h3>Weather App</h3>
+          <p>A weather application that provides real-time weather information for different locations.</p>
+          <p class="project-technologies-list">Node.js, Express, API, CSS, HTML</p>
+        </div>
+      </a>
+      <a href="https://becatblog-5f5f61a0f8f2.herokuapp.com/" class="project-link">
+        <div class="project-card">
+          <img src="./images/becatblog.png" alt="Preview of the sixth project">
+          <h3>BeCatBlog</h3>
+          <p>A blog website where you can share your thoughts and ideas with the world.</p>
+          <p class="project-technologies-list">Node.js, Express, EJS, CSS, HTML</p>
+        </div>
+        <a class="project-link">
+          <div class="project-card">
+            <img src="./images/development.jpg" alt="Preview of the under development project">
+            <h3>Project</h3>
+            <p>The project is under development.</p>
+            <p class="project-technologies-list"></p>
+          </div>
+        </a>
+
+    </div>
+  </section>
+
+
+  <!-- About Me Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <!-- Additional information about your interests -->
+    <div id="about-text">
+      <p>Hey there! 🚀 I'm a <strong>full-stack web developer</strong> journeying through the ever-expanding realm
+        of IT. 🌐 Currently, I'm deeply immersed in <strong>mastering a variety of web technologies</strong>. 💡 I've already
+        mastered <strong>HTML5</strong>, <strong>CSS3</strong>, and <strong>JavaScript</strong> to elevate my frontend and backend skills.
+        Now, I'm diving deeper into advanced frameworks and libraries like <strong>Node.js</strong>, <strong>Express</strong>,
+        and enhancing my proficiency in <strong>Git</strong> for efficient version control and collaboration.
+      </p>
+      <br>
+      <p>Guess what? This <strong>website you're exploring</strong> is my brainchild! 🧠 Crafted entirely from
+        scratch using <strong>cutting-edge web technologies</strong> and incorporating my latest skills, I'm continually pushing the boundaries of
+        design and functionality. 😎 Purposefully steering clear of pre-designed frameworks, I'm ensuring a unique and tailored digital experience for you.
+      </p>
+      <br>
+      <p>Just a heads up – while this website serves as a showcase of my web development skills, it's also a work in progress. 📸 Expect to see constant updates and improvements as I strive to stay ahead in the ever-evolving landscape of web development. 🌱💻</p>
+    </div>
+    <h3>My passions</h2>
+      <div class="page-content">
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Gaming</h2>
+            <p class="copy">My main hobby is gaming. I prefer strategy games and RPGs (Heart of Irons 4,
+              Crusader Kings 3, Baldur's Gate 3, The Witcher 3, etc.).</p>
+            <!-- <button class="btn">View Trips</button> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">AI & Neural Networks</h2>
+            <p class="copy">I am passionate about the development of AI and neural networks. For example, I
+              have
+              mastered Stable Diffusion, but I also follow other technologies.</p>
+            <!-- <button class="btn">View Trips</button> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Movies, Series & Anime</h2>
+            <p class="copy">What I appreciate in a movie is a deep plot. I like sci-fi, dystopia, cyberpunk
+              and
+              crime. </p>
+            <!-- <button class="btn">View Trips</button> -->
+          </div>
+        </div>
+        <div class="card">
+          <div class="content">
+            <h2 class="title">Science</h2>
+            <p class="copy">I enjoy discussing philosophical and near-scientific topics. I often watch
+              youtube
+              videos on such topics.</p>
+            <!-- <button class="btn">View Trips</button> -->
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section id="contact">
+
+    <h2>Contact Me</h2>
+    <div id="contact-container">
+      <div id="social-container">
+        <!-- Include social media links or a contact form -->
+        <div id="linkedin-card">
+          <div id="linkedin-content">
+            <img src="./images/linkedin.jpg" alt="Your LinkedIn Profile Picture">
+            <h3>Andrii Ovchynnikov</h3>
+            <p>IT Specialist & Web Developer</p>
+            <a href="https://www.linkedin.com/in/andrii-ovchynnikov/"><button>LinkedIn Profile</button></a>
+          </div>
+        </div>
+        <div id="github-card">
+          <iframe src="https://github-readme-stats.vercel.app/api?username=polibeerex&show_icons=true&hide_border=true&theme=swift&bg_color=ffffff&counts=true&repo_count=true&follower_count=true&following_count=true" frameborder="0" scrolling="0">
+          </iframe>
+          <a href="https://github.com/Polibeerex"><button>GitHub Profile</button></a>
+        </div>
+
+      </div>
+      <div id="contact-form-container">
+        <!-- Include contact information or a form -->
+        <iframe id="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfZAOnrXv5zcHd48U3iBVJLnzhwv1RLZSdPbP_uwO7c6cPFWQ/viewform?embedded=true" width="640" height="843" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="images/logo.svg" alt="Footer Logo">
+      </div>
+      <div class="footer-links">
+        <a id="back-to-top" href="#hero">
+          <img src="images/top.svg" alt="back to top icon" />
+        </a>
+      </div>
+    </div>
+    <p>&copy; 2024 Andrii Ovchynnikov. This website is hosted on GitHub and is subject to the <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
+  </footer>
 </body>
 
 </html>
